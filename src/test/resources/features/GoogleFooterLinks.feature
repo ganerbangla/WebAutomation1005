@@ -5,18 +5,18 @@ As a Google lover I want to test Google Footer Links
 Background:
 Given I go to Google Home page
 
-Scenario: Privacy Link test
-When I click on the Privacy link
-Then I see the Privacy page
+Scenario: Privacy Link test BAHAR
+When I click on the Privacy link BAHAR	
+Then I see the Privacy page BAHAR
  
-Scenario: Terms Link test
-When I click on the Terms link
-Then I see the Terms page
+Scenario: Terms Link test BAHAR
+When I click on the Terms link BAHAR
+Then I see the Terms page BAHAR
  
-#Scenario: Settings Link test
-#When I click on the Settings link
-#Then I see the Settings page
-#
+Scenario: Settings Link test BAHAR
+When I click on the Settings link BAHAR
+Then I see the Settings page BAHAR
+
 
 
 
