@@ -19,22 +19,17 @@ public class GoogleFooterLinks {
 		driver = SetDriver.webDriver;
 	}
 
-	
 	@Given("^I go to Google Home page$")
 	public void i_go_to_Google_Home_page() throws Throwable {
 
-
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		driver.get("https://www.google.com");
-
-
 	}
 
 	@When("^I click on the Privacy link$")
 	public void i_click_on_the_Privacy_link() throws Throwable {
 
 		driver.findElement(By.linkText("Privacy")).click();
-
 		Thread.sleep(4000);
 	}
 
@@ -42,34 +37,39 @@ public class GoogleFooterLinks {
 	public void i_see_the_Privacy_page() throws Throwable {
 
 		Assert.assertEquals(driver.getPageSource().contains("When you use Google services, you trust us with your information."),true);
-		Thread.sleep(2000);
+		Thread.sleep(4000);
+	}
+	
+	@When("^I click on the Terms link$")
+	public void i_click_on_the_Terms_link() throws Throwable {
 
+	driver.findElement(By.linkText("Terms")).click();
+	Thread.sleep(4000);
+
+    }
+
+	@Then("^I see the Terms page$")
+	public void i_see_the_Terms_page() throws Throwable {
+	
+	Assert.assertEquals(driver.getPageSource().contains("When you use Google services, you trust us with your information."),true);
+	Thread.sleep(4000);
+		
 	}
 
+	@When("^I click on the Settings link$")
+	public void i_click_on_the_Settings_link() throws Throwable {
+	
+	driver.findElement(By.linkText("Settings")).click();
+	Thread.sleep(4000);
+	
+	}
 
-@When("^I click on the Terms link$")
-public void i_click_on_the_Terms_link() throws Throwable {
+	@Then("^I see the Settings page$")
+	public void i_see_the_Settings_page() throws Throwable {
 
-
-}
-
-@Then("^I see the Terms page$")
-public void i_see_the_Terms_page() throws Throwable {
-
-
-}
-
-@When("^I click on the Settings link$")
-public void i_click_on_the_Settings_link() throws Throwable {
-
-
-}
-
-@Then("^I see the Settings page$")
-public void i_see_the_Settings_page() throws Throwable {
-
-
-}
+	Assert.assertEquals(driver.getPageSource().contains("When you use Google services, you trust us with your information."),true);
+	Thread.sleep(4000);
+	}
 
 
 

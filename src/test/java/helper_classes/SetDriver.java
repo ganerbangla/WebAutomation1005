@@ -24,7 +24,6 @@ public class SetDriver {
 		webDriver = new ChromeDriver();
 	}
 	
-
 	@After
 	public void afterTest(Scenario scenario) {
 		System.out.println("After test....");

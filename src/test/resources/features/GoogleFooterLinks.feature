@@ -6,7 +6,7 @@ Background:
 Given I go to Google Home page
 
 Scenario: Privacy Link test BAHAR
-When I click on the Privacy link BAHAR	
+When I click on the Privacy link BAHAR
 Then I see the Privacy page BAHAR
  
 Scenario: Terms Link test BAHAR
@@ -52,11 +52,8 @@ Then I see the Settings page BAHAR
 #""
 ## (Comments)
 #Sample Feature Definition Template
+  
 
- 
- #
-  #
-#
 #@tag
 #Feature: Title of your feature
   #I want to use this template for my feature file
